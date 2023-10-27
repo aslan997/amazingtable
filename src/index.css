@@ -1,13 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* react-resizable-styles.css */
+@import "~react-resizable/css/styles.css";
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Manrope", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.table {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.column {
+  border: 1px solid #ccc;
+  padding: 10px;
+  flex-grow: 1;
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+.column-header {
+  font-weight: bold;
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
+.column-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  margin: 5px 0;
 }
